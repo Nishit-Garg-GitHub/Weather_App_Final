@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 
 class WeatherApi {
   static Future<List<String>> searchCities(String query) async {
-    final apiKey = 'a8da451bcf3a9d4c44c07d1650b061ed'; // Replace with your actual API key
+    final apiKey = 'a8da451bcf3a9d4c44c07d1650b061ed';
     final apiUrl = 'https://api.openweathermap.org/data/2.5/find';
 
     final response = await http.get(
